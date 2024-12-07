@@ -1,0 +1,425 @@
+body {
+    width: 100%; /* le size 100% pour toute la page web */
+    min-height: 100vh; /* le size 100 vertical et la hauteur pour toute la page web */
+    background: white; /* la couleur de l'arriere-plan est blanche */
+    margin: 0; /* pas de marge */
+    padding: 0; /* pas de padding */
+    box-sizing: border-box; /* inclut padding et bordure dans la taille totale */
+    font-family: sans-serif; /* utilise une police sans-serif */
+}
+
+header {
+    height: 60px; /* hauteur fixe pour l'en-tete */
+    width: 100%; /* s'etend sur toute la largeur */
+    background-color: white; /* arriere-plan blanc */
+    color: rgb(201, 138, 21); /* couleur du texte dans l'en-tete */
+    display: flex; /* active le flexbox pour l'alignement */
+    align-items: center; /* aligne verticalement au centre */
+}
+
+.container {
+    width: 90%; /* limite la largeur a 90% */
+    margin: 0 auto; /* centrage horizontal */
+    display: flex; /* utilisation de flexbox */
+    align-items: center; /* aligne verticalement au centre */
+}
+
+.nav-list {
+    display: flex; /* place les elements de maniere flexible en ligne */
+    align-items: center; /* aligne verticalement au centre */
+    justify-content: center; /* centre horizontalement */
+}
+
+.nav-list li img {
+    width: 20px; /* taille fixe des images dans la liste */
+    margin: 0 5px; /* espacement horizontal des images */
+}
+
+nav ul li {
+    list-style: none; /* supprime les puces par defaut */
+    display: inline; /* affiche les elements en ligne */
+    margin-right: 20px; /* espace entre les elements */
+    gap: 20px; /* ajoute un espace entre les elements flexibles */
+    font-weight: bold; /* texte en gras */
+}
+
+nav ul li a {
+    font-size: 2rem; /* taille de police des liens */
+    text-decoration: none; /* supprime le soulignement */
+    color: rgb(201, 138, 21); /* couleur des liens */
+}
+
+.nav-list a:hover {
+    padding: 10px; /* ajoute du padding lors du survol */
+    border-radius: 10px; /* ajoute des coins arrondis */
+    background-color: rgb(236, 191, 106); /* change la couleur de fond lors du survol */
+    color: black; /* change la couleur du texte lors du survol */
+}
+
+.logo {
+    font-size: 2rem; /* taille du texte pour le logo */
+    font-family: "Agbalumo", system-ui; /* police pour le logo */
+    font-weight: 400; /* poids normal pour le texte */
+    font-style: normal; /* texte non-italique */
+    flex: 1; /* prend tout l'espace restant */
+    margin: 0 20px; /* espace horizontal autour */
+}
+
+.container img {
+    width: 40px; /* largeur fixe des images dans le conteneur */
+}
+
+.menu-icon {
+    display: none; /* cache par defaut */
+    font-size: 30px; /* taille de l'icone du menu */
+    color: white; /* couleur blanche pour l'icone */
+    cursor: pointer; /* change le curseur pour indiquer un element cliquable */
+    float: right; /* positionne l'icone a droite */
+    margin-right: 20px; /* espace a droite */
+    margin-top: 10px; /* decale l'icone vers le bas */
+    background-color: rgb(201, 138, 21); /* couleur de fond de l'icone */
+    border-radius: 10px; /* ajoute des coins arrondis */
+    padding: 5px 10px; /* ajoute un espacement interne autour de l'icone */
+}
+
+.ligne {
+    width: 91%; /* largeur initiale de la ligne */
+    margin-left: 100px; /* espace initial a gauche */
+    border: 1px solid rgb(201, 138, 21); /* bordure fine de couleur */
+    transition: width 0.5s; /* effet de transition sur la largeur */
+    transition: margin 0.5s; /* effet de transition sur la marge */
+}
+
+.ligne:hover {
+    width: 100%; /* etend la ligne a 100% au survol */
+    margin-left: 0; /* supprime la marge gauche au survol */
+}
+
+.nutrition-div img {
+    align-items: center; /* aligne verticalement */
+    margin: 0 auto; /* centre horizontalement */
+    width: 90%; /* ajuste la largeur a 90% */
+    height: 800px; /* hauteur fixe de l'image */
+    padding: 50px 100px; /* espace interne autour de l'image */
+    transition: width 0.5s ease; /* effet de transition sur la largeur */
+}
+
+/* section des recettes */
+
+.titre-contenue h2 {
+    display: flex; /* utilisation de flexbox */
+    justify-content: center; /* centre horizontalement */
+    align-items: center; /* centre verticalement */
+    border-top-style: solid; /* style de bordure en haut */
+    border-bottom-style: solid; /* style de bordure en bas */
+    color: rgb(201, 138, 21); /* couleur du texte */
+    text-align: center; /* aligne le texte au centre */
+    padding: 10px; /* espace interne */
+    font-family: "Agbalumo", system-ui; /* police utilisee */
+    font-size: 28px; /* taille de police */
+    width: 40%; /* largeur de l'element */
+    margin: 0 auto; /* centre horizontalement */
+    transition: border 0.5s ease; /* effet de transition sur la bordure */
+    transition: margin-left 0.5s ease; /* effet de transition sur la marge */
+}
+
+.recipes {
+    width: 100%; /* largeur maximale */
+    display: flex; /* utilisation de flexbox */
+    justify-content: center; /* centre horizontalement */
+    align-items: center; /* centre verticalement */
+}
+
+.recipes h2:hover {
+    width: 100%; /* etend la largeur au survol */
+    margin-left: 0; /* supprime la marge gauche au survol */
+}
+
+.recipes h3 {
+    text-align: center; /* centre le texte */
+    padding: 10px; /* espace interne */
+}
+
+.recipe-sec {
+    display: grid; /* grille pour organiser les elements */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* ajuste le nombre de colonnes selon l'espace */
+    column-gap: 50px; /* espace entre les colonnes */
+    padding: 20px; /* espace interne */
+    grid-template-columns: 400px 400px 400px; /* definit trois colonnes fixes */
+}
+
+.recipe-card {
+    background-color: #f1f1f1; /* couleur de fond de la carte */
+    margin: 30px 10px; /* espace autour des cartes */
+    border-radius: 10px; /* coins arrondis */
+    overflow: hidden; /* masque les elements depassant */
+    box-shadow: 1px 0 8px rgb(201, 138, 21); /* ombre autour de la carte */
+    padding: 20px; /* espace interne */
+    transition: transform 2s; /* effet de transition sur la transformation */
+}
+
+.recipe-card img {
+    width: 100%; /* largeur maximale de l'image */
+    height: 200px; /* hauteur fixe de l'image */
+    object-fit: cover; /* ajuste l'image a la taille */
+    border-top-left-radius: 10px; /* coin superieur gauche arrondi */
+    border-top-right-radius: 10px; /* coin superieur droit arrondi */
+}
+.recipe-card h2 {
+    font-size: 18px; /* taille de la police des titres des cartes */
+    padding: 10px; /* espace interne autour du titre */
+    margin: 5px auto; /* espace vertical avec centrage horizontal */
+}
+
+.recipe-card ul > li {
+    list-style-type: circle; /* liste avec puces en forme de cercle */
+    margin: 0px 10px; /* espace horizontal autour des elements de la liste */
+}
+
+.recipe-card ul {
+    margin: 5px 10px; /* espace autour de la liste */
+}
+
+.recipe-card a {
+    color: rgb(201, 138, 21); /* couleur des liens */
+    text-decoration: none; /* supprime le soulignement des liens */
+}
+
+.recipe-card a:hover {
+    font-weight: bold; /* rend le texte gras au survol */
+    background-color: orange; /* change la couleur de fond au survol */
+    color: black; /* change la couleur du texte au survol */
+    cursor: pointer; /* affiche un curseur de clic */
+}
+
+.recipe-card:hover {
+    transform: scale(1.2); /* augmente la taille de la carte au survol */
+}
+
+/* contenu des pages recettes */
+
+.recette img {
+    display: flex; /* place l'image en flexbox */
+    margin: 50px auto; /* espace vertical et centrage horizontal */
+    justify-content: center; /* centre horizontalement */
+    align-items: center; /* centre verticalement */
+    border-radius: 10px; /* coins arrondis */
+    width: 600px; /* largeur fixe de l'image */
+    height: 400px; /* hauteur fixe de l'image */
+}
+
+.recette h1 {
+    display: flex; /* active la flexbox */
+    justify-content: center; /* centre horizontalement */
+    align-items: center; /* centre verticalement */
+    color: rgb(201, 138, 21); /* couleur du texte */
+    font-family: "Agbalumo", system-ui; /* police utilisee */
+    font-size: 30px; /* taille de police */
+    margin-bottom: 50px; /* espace en bas */
+    transition: transform 0.5s ease; /* effet de transition sur la transformation */
+}
+
+.recette h1:hover {
+    transform: scale(1.2); /* augmente la taille du titre au survol */
+    cursor: pointer; /* affiche un curseur de clic */
+}
+
+.contenu_recette {
+    flex-direction: column; /* organise les elements en colonne */
+    margin: 0 auto; /* centre horizontalement */
+    background-color: rgb(241, 224, 192); /* couleur de fond */
+    border-radius: 5px; /* coins arrondis */
+    width: 50%; /* largeur fixe de la section */
+    padding: 40px; /* espace interne */
+}
+
+.contenu_recette h4 {
+    margin-top: 20px; /* espace au-dessus du titre */
+    padding: 20px 0; /* espace interne vertical */
+    font-size: 25px; /* taille de police */
+    font-weight: bold;
+}
+
+.contenu_recette img {
+    width: 30px; /* largeur fixe des images */
+    margin: 0 20px; /* espace horizontal autour des images */
+}
+
+.recipes h2 {
+    text-align: center; /* centre le texte */
+    margin-bottom: 30px; /* espace en bas */
+    font-size: 28px; /* taille de police */
+}
+p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contenu_recette ul,
+.contenu_recette ol,
+.contenu_recette li {
+    padding: 5px; /* espace interne autour des listes */
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* style du pied de page */
+
+footer {
+    width: 100%; /* occupe toute la largeur */
+    display: flex; /* active la flexbox */
+    justify-content: center; /* centre horizontalement */
+    align-items: center; /* centre verticalement */
+    background-color: #333; /* couleur de fond */
+    margin-top: 50px; /* espace au-dessus du footer */
+    padding: 20px; /* espace interne */
+    color: white; /* couleur du texte */
+}
+footer p{
+    font-size: 1.5rem;
+}
+
+footer i {
+    margin: 10px; /* espace autour des icones */
+    padding-left: 10px; /* espace a gauche des icones */
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* empile les elements en colonne */
+        height: auto; /* ajuste automatiquement la hauteur */
+        text-align: center; /* centre le texte */
+    }
+
+    .container {
+        flex-direction: column; /* organise les elements en colonne */
+        width: 100%; /* occupe toute la largeur disponible */
+    }
+
+    .logo img {
+        max-width: 20px; /* reduit la taille maximale du logo */
+    }
+
+    .logo h1 {
+        font-size: 0.5rem; /* ajuste la taille de la police */
+    }
+
+    .nav-list {
+        flex-direction: column; /* empile les liens en colonne */
+        gap: 10px; /* espace entre les liens */
+        align-items: center; /* aligne les elements au centre */
+    }
+
+    .nav-list li {
+        margin-right: 0; /* supprime l'espace a droite des elements */
+    }
+
+    .menu-icon {
+        display: block; /* affiche l'icone du menu */
+    }
+
+    .nutrition-div img {
+        width: 90%; /* ajuste la largeur des images a 90% */
+        margin: 20px auto; /* centre les images horizontalement */
+    }
+
+    .recipe-sec {
+        grid-template-columns: 1fr; /* une seule colonne pour les recettes */
+        padding: 10px; /* espace interne autour de la grille */
+    }
+
+    .nutrition-div {
+        margin: 0 auto; /* centre la div horizontalement */
+    }
+}
+
+/* tres petits ecrans (max-width: 480px) */
+
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 25px; /* ajuste la largeur maximale du logo */
+    }
+
+    .logo h1 {
+        font-size: 1.2rem; /* ajuste la taille de la police */
+    }
+
+    .nav-list a {
+        font-size: 16px; /* reduit la taille des liens */
+    }
+
+    .recipe-card {
+        padding: 10px; /* espace interne reduit dans les cartes */
+        margin: 15px 5px; /* ajuste les marges autour des cartes */
+    }
+
+    .recipe-card h3 {
+        font-size: 1rem; /* reduit la taille des titres des cartes */
+    }
+
+    footer p {
+        font-size: 0.8rem; /* ajuste la taille du texte dans le footer */
+    }
+
+    footer i {
+        font-size: 20px; /* ajuste la taille des icones */
+    }
+}
+
+/* moyens ecrans (768px a 1024px) */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo {
+        font-size: 1rem; /* ajuste la taille de la police du logo */
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* ajuste la taille des liens */
+    }
+
+    .recipe-sec {
+        grid-template-columns: repeat(2, 1fr); /* deux colonnes pour les recettes */
+        column-gap: 30px; /* espace entre les colonnes */
+    }
+
+    footer i {
+        font-size: 20px; /* ajuste la taille des icones */
+    }
+
+    footer {
+        width: 100%; /* occupe toute la largeur */
+    }
+
+    footer {
+        flex-direction: row; /* organise les elements en ligne */
+    }
+}
+
+/* grands ecrans (1024px a 1520px) */
+
+@media (min-width: 1024px) and (max-width: 1520px) {
+    .logo {
+        font-size: 1.2rem; /* ajuste la taille de la police du logo */
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* ajuste la taille des liens */
+    }
+
+    .recipe-sec {
+        grid-template-columns: repeat(2, 1fr); /* deux colonnes pour les recettes */
+        column-gap: 30px; /* espace entre les colonnes */
+    }
+
+    footer p {
+        font-size: 0.8rem; /* ajuste la taille du texte dans le footer */
+    }
+
+    footer i {
+        font-size: 20px; /* ajuste la taille des icones */
+    }
+
+    footer {
+        flex-direction: row; /* organise les elements en ligne */
+    }
+}
+

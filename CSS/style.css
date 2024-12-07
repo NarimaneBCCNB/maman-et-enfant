@@ -1,0 +1,533 @@
+
+body{
+    width:100%;
+    min-height:100vh;
+    background:white;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif
+}
+header{
+    height:60px;
+    width:100%;
+    background-color: white;
+    color: rgb(201, 138, 21);
+    display:flex;
+    align-items: center;
+}
+.container{
+    width:90%;
+    margin:0 auto ;
+    display:flex;
+    align-items: center;
+    
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-list li img{
+    width:20px;
+    margin:0 5px;
+}
+
+nav ul li {
+    list-style: none;
+    display:inline;
+    margin-right:20px;
+    font-weight: 50px;
+    gap:20px;
+    font-weight: bold;
+}
+nav ul li a{
+    font-size: 2rem;
+    text-decoration: none;
+    color:rgb(201, 138, 21);
+   /* font-size: 25px;*/
+}
+.logo{
+    font-size:2rem;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    flex:1;
+    margin: 0 20px;
+  }
+  .container img{
+    width:40px;
+  }
+
+
+  .menu-icon {
+    display: none;/* Cache par defaut */
+    font-size: 30px;/* taille de l'icône du menu */
+    color: white;/* Couleur blanche pour l'icône */
+    cursor: pointer;/* Change le curseur pour indiquer un élément cliquable */
+    float: right;/* Positionne l'icône à droite */
+    margin-right: 20px;
+    margin-top: 10px;/* Decale l'icône vers le bas*/
+    background-color: rgb(201, 138, 21);/* couleur de fond de l'icône */
+    border-radius: 10px;/* ajoute des coins arrondis */
+    padding: 5px 10px;/* ajoute un espacement interne autour de l'icône */
+}
+.contenue{
+    width:100%;
+    height: 70vh;
+    background:url(/imgs/bunner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding:200px 100px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+   
+}
+.ligne{
+    width:91%;
+    margin-left:100px;
+    border: 1px solid rgb(201, 138, 21)  ;
+    transition: width 0.5s;
+    transition: margin 0.5s;
+}
+.ligne:hover{
+    width:100%;
+    margin-left:0;
+   
+}
+
+.nav-list a{
+    text-decoration: none;
+    color:rgb(201, 138, 21);
+    font-size: 1.5rem;
+   /* font-size: 25px;*/
+}
+.nav-list a:hover{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(236, 191, 106);
+    color:black;
+}
+
+
+
+/* Styles pour les sections de contenu, avec un espacement spécifique */
+.contenue h2{
+    font-size: 26px;
+    margin-bottom: 10px;
+    margin:100px;
+}
+
+.contenu{
+    width:75%;
+    align-items: center;
+    display:flex;
+    margin:75px auto;
+    
+}
+.contenu img{
+    width:500px;
+    height:400px;
+    opacity:0.8;
+    float:left;
+    margin:0 auto ;
+    border-radius: 10px;
+    
+    
+}
+.contenu .paragraphe {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin:0 auto;
+    text-align: justify;
+    padding:40px;
+    line-height: 200%;
+    text-align:justify;
+}
+
+   
+/* Style du titre de la section des jeux */
+.title {
+    display: flex;
+    justify-content: center;
+    color: rgba(15, 135, 105, 0.595);
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-top: 125px;
+    margin-bottom: 25px;
+}
+
+
+
+.contact {
+    background-color: rgb(240, 236, 228); /* Couleur de fond */
+    border-radius: 10px; /* Coins arrondis */
+    margin: 30px auto; /* Centré avec marges automatiques */
+    padding: 20px; /* Réduit le padding pour les petits écrans */
+    max-width: 1200px; /* Limite la largeur sur les écrans larges */
+    width: 90%; /* S'adapte à la largeur de l'écran */
+    color: black;
+}
+.contact h2 {
+    text-align:center;
+    margin: 50px;
+    font-size: 40px;
+    
+}
+.contact p {
+    text-align:center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    margin:0 auto;
+    text-align: center;
+    padding: 10px 50px;
+    line-height: 200%;
+}
+.contactsec{
+    width:100%;
+    align-items: center;
+   flex-direction: column;
+    margin:0 auto;
+}
+/*
+#contacts img{
+    width:30%;
+    display:flex;
+    float: left;    
+    margin:0 auto;
+}
+*/
+
+.contactsec form {
+    border: 1px solid #e0dedf;
+    border-radius: 10px;
+    text-align:center;
+    margin:0 auto;
+    width:30%;
+    padding: 40px;
+    margin-top: 100px;
+  
+   
+}
+
+.contactsec input{
+    border:1px solid rgb(201, 138, 21);
+    border-radius: 10px;
+    padding:5px;
+    font-size: 30px;/**/
+   
+}
+.contactsec textarea{
+    border:1px solid rgb(201, 138, 21);
+    border-radius:10px;
+    padding:10px;
+    margin:0px auto;
+    font-size: 33px;/**/
+}
+.contactsec #envoyer{
+    padding:15px 30px ;
+    background-color: rgb(201, 138, 21);
+    border-radius: 10px ;
+    border:1px solid rgb(201, 138, 21);
+    color:#f1f1f1;
+    font-size: 30px;
+
+}
+
+#envoyer:hover{
+    background-color: rgba(15, 135, 105, 0.595);
+    color:#f1f1f1;
+}
+
+
+ footer {
+    width: 100%; /* occupe toute la largeur */
+    display: flex; /* active la flexbox */
+    justify-content: center; /* centre horizontalement */
+    align-items: center; /* centre verticalement */
+    background-color: #333; /* couleur de fond */
+    margin-top: 50px; /* espace au-dessus du footer */
+    padding: 20px; /* espace interne */
+    color: white; /* couleur du texte */
+}
+
+footer i {
+    margin: 10px; /* espace autour des icones */
+    padding-left: 10px; /* espace a gauche des icones */
+}
+
+
+
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 25px;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .nav-list a {
+        font-size: 16px; /* Réduit la taille des liens */
+    }
+
+    .recipe-card {
+        padding: 10px;
+        margin: 15px 5px;
+    }
+
+    .recipe-card h3 {
+        font-size: 1rem; /* Réduit la taille des titres */
+    }
+
+    footer p{
+        font-size: 1.5rem;
+    }
+    
+
+    footer i {
+        font-size: 20px; /* Réduit les icônes */
+    }
+}
+@media only screen and (max-width:768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+   
+
+    .logo img {
+        max-width: 20px; /* Réduit la taille du logo */
+    }
+
+    .logo h1 {
+        font-size: 0.5rem; /* Ajuste la taille de la police */
+    }
+
+    .nav-list {
+        flex-direction: column; /* Empile les liens */
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-list li {
+        margin-right: 0; /* Supprime l'espacement excessif */
+    }
+
+    .menu-icon {
+        display: block; /* Affiche l'icône du menu */
+    }
+}
+
+@media only screen and (max-width:1920px) {
+    .contenue h2 {
+        font-size: 28px;
+    }
+
+
+    .contenue p {
+        font-size: 15px;
+    }
+    .education-div img{
+        width:60%;
+    }
+    .education-sec{
+        width:98%;
+        margin:20px 10px 20px 30px;
+        display: grid;
+        grid-template-columns: 400px 400px 400px 400px;
+        column-gap: 50px;
+        row-gap: 50px;
+        justify-content: center;
+    }
+}
+
+/* --- Responsive Design avec Media Queries uniquement --- */
+
+/* Pour les écrans étroits (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+
+    .contenue {
+        background-size: contain; /* Affiche l'image entière */
+        background-position: center center;
+        max-width: 90%;
+        margin: 0 auto;
+        
+    }
+    .menu-icon {
+        display: block; 
+        margin-left:200px ;/* L'icône burger est visible */
+        margin-bottom: 10px;
+        font-size: 20px;/* taille de l'icône du menu */
+       
+
+    }
+
+    .logo {
+        flex-direction: column; /* Passe l'image et le texte en colonne */
+        align-items: center; /* Centre les éléments */
+        gap: 5px; /* Réduit l'espacement */
+    }
+
+    .logo h1 {
+        font-size: 1.5rem; /* Réduit la taille du texte */
+    }
+
+    .logo img {
+        width: 40px; /* Réduit la taille de l'image */
+    }
+   
+    .nav-list {
+        display: none; /* Cache le menu par défaut */
+       
+    }
+    .title{
+        margin-top: 10px;
+        font-size: 2rem; /* Réduction de la taille */
+        text-align: center;
+    }
+
+    .contenu {
+        flex-direction: column; /* Images et texte empilés */
+        align-items: center;
+        text-align: center;
+    }
+
+    .contenu img {
+        width: 90%; /* Images pleine largeur */
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .contenu #paragraphe {
+        font-size: 16px; /* Texte plus petit */
+        padding: 10px;
+    }
+    .contact {
+        width: 95%; /* Presque pleine largeur */
+        padding: 15px; /* Réduit le padding */
+    }
+
+    .contact h2 {
+        font-size: 1.5rem; /* Réduit la taille des titres */
+    }
+
+    .contact p {
+        font-size: 1rem; /* Texte plus petit */
+    }
+    .contactsec form {
+        width: 90%; /* Formulaire pleine largeur */
+        margin: 0 auto;
+    }
+
+    footer i {
+        flex-direction: column;
+      
+    }
+
+    footer p {
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+/* Pour les écrans moyens (768px à 1200px) */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .contenu {
+        flex-direction: row; /* Images et texte côte à côte */
+        align-items: center;
+    }
+
+    .contenu img {
+        width: 50%; /* Images prennent moins de place */
+        height: auto;
+    }
+
+    .contenu #paragraphe {
+        font-size: 18px; /* Texte légèrement plus grand */
+        padding: 20px;
+    }
+
+    .contactsec form {
+        width: 70%; /* Formulaire ajusté */
+    }
+    .contenue {
+        background-size: contain; /* Affiche l'image entière */
+        background-position: center center;
+        max-width: 90%;
+        margin: 0 auto;
+        
+    }
+    .menu-icon {
+        display: none; 
+        margin-left:200px ;/* L'icône burger est visible */
+        margin-bottom: 10px;
+        font-size: 20px;/* taille de l'icône du menu */
+       
+
+    }
+
+    .logo{
+        font-size: 1.2rem;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+   
+    .nav-list {
+        display: block; /* Cache le menu par défaut */
+       
+    }
+    footer i {
+        flex-direction: column;
+      
+    }
+
+    footer p {
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+/* Pour les grands écrans (plus de 1200px) */
+@media only screen and (min-width: 1200px) {
+    .contenu {
+        flex-direction: row; /* Images et texte côte à côte */
+        align-items: center;
+    }
+
+    .contenu img {
+        width: 40%;
+        height: auto;
+    }
+
+    .contenu #paragraphe {
+        font-size: 20px; /* Texte plus grand */
+    }
+
+    .contactsec form {
+        width: 50%;
+    }
+    footer p {
+        font-size: 0.8rem; /* ajuste la taille du texte dans le footer */
+    }
+
+    footer i {
+        font-size: 20px; /* ajuste la taille des icones */
+    }
+
+    footer {
+        flex-direction: row; /* organise les elements en ligne */
+    }
+}

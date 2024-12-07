@@ -1,0 +1,457 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif
+}
+body{
+    width:100%;
+    min-height:100vh;
+    background:white;
+}
+header{
+    height:60px;
+    width:100%;
+    background-color: white;
+    color: rgb(201, 138, 21);
+    display:flex;
+    align-items: center;
+}
+.container{
+    width:90%;
+    margin:0 auto ;
+    display:flex;
+    align-items: center;
+    
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-list li img{
+    width:20px;
+    margin:0 5px;
+}
+
+nav ul li {
+    list-style: none;
+    display:inline;
+    margin-right:20px;
+    font-weight: 50px;
+    gap:20px;
+    font-weight: bold;
+}
+.logo{
+    font-size:2rem;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    flex:1;
+    margin: 0 20px;
+  }
+  .container img{
+    width:40px;
+  }
+  .menu-icon{
+    font-size: 36px;
+    padding: 20px;
+    text-align: right;
+    cursor: pointer;
+    display: none;
+    padding:5px;
+    background-color:rgb(201, 138, 21) ;
+    color:white;
+}
+.contenue{
+    width:100%;
+    height:600px;
+    background:url(/imgs/bunner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding:150px 0;
+    margin-bottom: 50px;
+   
+}
+
+.nav-list a{
+    font-size: 2rem;
+    text-decoration: none;
+    color:rgb(201, 138, 21);
+}
+.nav-list a:hover{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(236, 191, 106);
+    color: black;
+}
+
+/* Styles pour les sections de contenu, avec un espacement spécifique */
+section {
+    padding: 100px 200px;
+}
+
+/* Section de jeu avec arrière-plan et opacité */
+.jeux {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background: url(/imgs/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.8;
+}
+
+/* Titre secondaire dans la section de jeux */
+.jeux h2 {
+    color: #f8f8f8;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+/* Style des éléments en span dans le titre secondaire */
+.jeux h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(153, 101, 5);
+    font-size: 3em;
+    font-weight: 600;
+}
+
+/* Style du titre principal dans la section de jeux */
+.jeux h3 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Style des boutons dans la section de jeux */
+.jeux-btn {
+    color: black;
+    background-color: rgb(201, 138, 21);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin-inline: 20px;
+    transition: 0.7s ease;
+}
+
+/* Effet au survol des boutons dans la section de jeux */
+.jeux-btn:hover {
+    background-color: rgba(15, 135, 105, 0.595);
+    transform: scale(1.05);
+    color:black;
+}
+
+/* Style du titre de la section des jeux */
+.title {
+    display: flex;
+    justify-content: center;
+    color:  rgb(201, 138, 21);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+/* Style du titre secondaire dans la section des jeux */
+.title2 {
+    display: flex;
+    justify-content: center;
+    color: rgba(15, 135, 105, 0.595);
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+/* Mise en forme du contenu dans la section de jeux */
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Style des cartes de contenu dans les jeux */
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+/* Effet de mise à l'échelle des cartes au survol */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Style des cartes de page dans les jeux */
+.card-page {
+    background-color: #fff;
+    width: 25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+/* Effet de mise à l'échelle des cartes de page au survol */
+.card-page:hover {
+   transform: scale(1.05);
+}
+
+/* Style des informations dans les cartes de jeux */
+.info {
+    text-align: left;
+}
+
+/* Style des titres dans la section des informations */
+.info h3{
+    color: rgba(15, 135, 105, 0.595);;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+/* Style des sous-titres dans les informations */
+.info h4 {
+    font-size: 1.3em;
+    color: rgb(201, 138, 21);
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* Style des paragraphes dans les informations */
+.info p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+/* Style des listes dans les informations */
+.info ul, ol {
+    margin-left: 20px;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Style des éléments de liste dans les informations */
+.info ul li, ol li {
+    margin: 5px 0;
+}
+
+
+
+/* Section dédiée aux cartes de jeux */
+.typeJeux {
+    background-color: #fff;
+}
+
+/* Contenu des cartes de jeux */
+.typeJeux .content{
+    margin-top: 60px;
+}
+
+/* Style des cartes de jeu, avec une transition d'animation */
+.typeJeux-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 30em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 30px;
+    transition: 0.7s ease;
+}
+
+/* Effet de mise à l'échelle au survol des cartes de jeu */
+.typeJeux-card:hover {
+   transform: scale(1.1);
+}
+
+/* Effet d'opacité sur l'image des cartes de jeu au survol */
+.typeJeux-card:hover .typeJeux-image {
+    opacity: 0.7;
+}
+
+/* Style des images dans les cartes de jeu */
+.typeJeux-image img{
+    width: 100%
+}
+
+/* Style des informations dans les cartes de jeu */
+.typeJeux-info {
+    padding: 1em;
+}
+
+/* Style de la catégorie des jeux dans les cartes */
+.typeJeux-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+/* Style du titre de chaque carte de jeu */
+.typeJeux-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+/* Style des liens vers plus de détails */
+.more-details {
+    text-decoration: none;
+    color: rgba(15, 135, 105, 0.595);;
+}
+
+/* Effet au survol du lien "plus de détails" */
+.more-details:hover {
+    color: rgb(201, 138, 21);
+}
+
+/* Style du pied de page avec une couleur de fond et de texte spécifiques */
+footer {
+    
+
+  
+    background-color: #333;
+    margin-top:100px;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  
+}
+footer p{
+    margin:20px;
+}
+footer i{
+    margin:10px;
+}
+
+/* Media queries pour adapter le design en fonction de la taille de l'écran */
+
+/* Pour les écrans de moins de 1023px : ajustements pour l'en-tête, la navigation, et la taille du texte */
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Pour les écrans de moins de 641px : réduction de la taille du texte */
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+/* Pour les écrans très petits (moins de 300px) : encore plus petite taille de texte */
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+}
+
+/* Pour les écrans plus larges (minimum 768px) : adaptation du menu */
+@media only screen and (min-width:768px){
+    .menu-icon{
+       display: none;
+    }
+    .nav-list{
+       display: block;
+    }
+}
+
+/* Pour les écrans plus larges que 1920px : mise en forme des éléments */
+@media only screen and (min-width: 1920px) {
+    
+    
+    
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-list {
+        display: block;
+    }
+    .complet{
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Ajustements supplémentaires pour les écrans de moins de 641px */
+@media (max-width: 641px) {
+    body {
+        font-size: 12px;
+    }
+
+    .info h3 {
+        font-size: 1.5em;
+    }
+
+    .info h4 {
+        font-size: 1.1em;
+    }
+
+    .info p, ul, ol {
+        font-size: 0.9em;
+    }
+}
+
+
